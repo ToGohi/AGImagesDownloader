@@ -18,7 +18,7 @@ pod 'AGImagesDownloader'
 
 ## Description
 
-
+Extension to UIImageView to download images from URL and cache it locally.
 
 ## Author
 
@@ -26,4 +26,4 @@ Antonio González, togohi@gmail.com
 
 ## License
 
-AGCustomControls is available under the MIT license. See the LICENSE file for more info.
+AGImagesDownloader is available under the MIT license. See the LICENSE file for more info.
