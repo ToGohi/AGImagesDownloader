@@ -8,14 +8,14 @@
 
 import UIKit
 
-extension UIImageView {
+public extension UIImageView {
 
-    func loadImageFromCache(url:URL){
+    public func loadImageFromCache(url:URL){
         print(url.lastPathComponent)
         loadImageFromCache(filename: url.lastPathComponent, url: url)
     }
     
-    func loadImageFromCache(filename:String, url:URL) {
+    public func loadImageFromCache(filename:String, url:URL) {
         
         let imagesCache = AGImageCache.shared
         
