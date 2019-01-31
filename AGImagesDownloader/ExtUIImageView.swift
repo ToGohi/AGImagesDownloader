@@ -10,11 +10,19 @@ import UIKit
 
 public extension UIImageView {
 
+    /// Download an image from URL or load from internal cache
+    ///
+    /// - Parameter url: URL of the image to download.
     public func loadImageFromCache(url:URL){
         print(url.lastPathComponent)
         loadImageFromCache(filename: url.lastPathComponent, url: url)
     }
     
+    /// Download an image from URL or load from internal cache
+    ///
+    /// - Parameters:
+    ///   - filename: The filename of the image to store in internal cache.
+    ///   - url: URL of the image to download.
     public func loadImageFromCache(filename:String, url:URL) {
         
         let imagesCache = AGImageCache.shared
