@@ -54,6 +54,7 @@ An example of use:
 ## Screenshots
 
 The UIImageView will show an activity monitor at the center.
+
 ![Downloading an image](https://github.com/ToGohi/AGImagesDownloader/raw/master/screen01.png)
 
 ## Author

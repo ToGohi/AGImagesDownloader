@@ -11,7 +11,19 @@
 		AD1FD6D92203621800518781 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = AD1FD6D82203621800518781 /* LICENSE */; };
 		AD1FD6DB2203623400518781 /* AGImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1FD6DA2203623400518781 /* AGImageCache.swift */; };
 		AD1FD6DD2203624300518781 /* ExtUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1FD6DC2203624300518781 /* ExtUIImageView.swift */; };
+		AD81C967220377350007C405 /* AGImagesDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81C966220377350007C405 /* AGImagesDownloaderTests.swift */; };
+		AD81C969220377350007C405 /* AGImagesDownloader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1FD6CD22035F5400518781 /* AGImagesDownloader.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD81C96A220377350007C405 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD1FD6C422035F5400518781 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD1FD6CC22035F5400518781;
+			remoteInfo = AGImagesDownloader;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AD1FD6CD22035F5400518781 /* AGImagesDownloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AGImagesDownloader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +32,9 @@
 		AD1FD6D82203621800518781 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		AD1FD6DA2203623400518781 /* AGImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGImageCache.swift; sourceTree = "<group>"; };
 		AD1FD6DC2203624300518781 /* ExtUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtUIImageView.swift; sourceTree = "<group>"; };
+		AD81C964220377340007C405 /* AGImagesDownloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AGImagesDownloaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD81C966220377350007C405 /* AGImagesDownloaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGImagesDownloaderTests.swift; sourceTree = "<group>"; };
+		AD81C968220377350007C405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +45,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AD81C961220377340007C405 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD81C969220377350007C405 /* AGImagesDownloader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				AD1FD6CF22035F5400518781 /* AGImagesDownloader */,
+				AD81C965220377340007C405 /* AGImagesDownloaderTests */,
 				AD1FD6CE22035F5400518781 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				AD1FD6CD22035F5400518781 /* AGImagesDownloader.framework */,
+				AD81C964220377340007C405 /* AGImagesDownloaderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +84,15 @@
 				AD1FD6D122035F5400518781 /* Info.plist */,
 			);
 			path = AGImagesDownloader;
+			sourceTree = "<group>";
+		};
+		AD81C965220377340007C405 /* AGImagesDownloaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD81C966220377350007C405 /* AGImagesDownloaderTests.swift */,
+				AD81C968220377350007C405 /* Info.plist */,
+			);
+			path = AGImagesDownloaderTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,18 +127,40 @@
 			productReference = AD1FD6CD22035F5400518781 /* AGImagesDownloader.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		AD81C963220377340007C405 /* AGImagesDownloaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD81C96E220377350007C405 /* Build configuration list for PBXNativeTarget "AGImagesDownloaderTests" */;
+			buildPhases = (
+				AD81C960220377340007C405 /* Sources */,
+				AD81C961220377340007C405 /* Frameworks */,
+				AD81C962220377340007C405 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD81C96B220377350007C405 /* PBXTargetDependency */,
+			);
+			name = AGImagesDownloaderTests;
+			productName = AGImagesDownloaderTests;
+			productReference = AD81C964220377340007C405 /* AGImagesDownloaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		AD1FD6C422035F5400518781 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Antonio Gonzalez Hidalgo";
 				TargetAttributes = {
 					AD1FD6CC22035F5400518781 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
+					};
+					AD81C963220377340007C405 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -121,6 +177,7 @@
 			projectRoot = "";
 			targets = (
 				AD1FD6CC22035F5400518781 /* AGImagesDownloader */,
+				AD81C963220377340007C405 /* AGImagesDownloaderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +188,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD1FD6D92203621800518781 /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD81C962220377340007C405 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +210,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AD81C960220377340007C405 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD81C967220377350007C405 /* AGImagesDownloaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD81C96B220377350007C405 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD1FD6CC22035F5400518781 /* AGImagesDownloader */;
+			targetProxy = AD81C96A220377350007C405 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AD1FD6D322035F5400518781 /* Debug */ = {
@@ -324,6 +404,42 @@
 			};
 			name = Release;
 		};
+		AD81C96C220377350007C405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = AGImagesDownloaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apptonio.AGImagesDownloaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD81C96D220377350007C405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = AGImagesDownloaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apptonio.AGImagesDownloaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -341,6 +457,15 @@
 			buildConfigurations = (
 				AD1FD6D622035F5400518781 /* Debug */,
 				AD1FD6D722035F5400518781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD81C96E220377350007C405 /* Build configuration list for PBXNativeTarget "AGImagesDownloaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD81C96C220377350007C405 /* Debug */,
+				AD81C96D220377350007C405 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
