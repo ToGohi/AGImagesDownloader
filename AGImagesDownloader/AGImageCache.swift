@@ -2,7 +2,7 @@
 //  AGImageCache.swift
 //  AGImagesDownloader
 //
-//  Created by Antonio González Hidalgo (Monqi) on 28/01/2019.
+//  Created by Antonio González Hidalgo on 28/01/2019.
 //  Copyright © 2019 Antonio González Hidalgo. All rights reserved.
 //
 
